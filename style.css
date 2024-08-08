@@ -1,0 +1,183 @@
+/* General styles for the entire page */
+body {
+    font-family: 'Arial', sans-serif; /* Choose a suitable font */
+    line-height: 1.6;
+    margin: 20px;
+    color: #333; /* Dark text color */
+}
+
+.imagenes{
+    width: 80%;
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 30px; /* Add spacing below header */
+}
+
+header h1 {
+    color: #007bff; /* Blue color for main heading */
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header h2 {
+    font-size: 1.8em;
+    margin-top: 20px; /* Add spacing above subheading */
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Video placeholder styles */
+.video-placeholder {
+    background-color: #ccc;
+    height: 200px; /* Adjust as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+/* Button styles */
+.register-button {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s; /* Add smooth hover effect */
+}
+
+.register-button:hover {
+    background-color: #3e8e41;
+}
+
+/* Price and seats information styles */
+.original-price {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 0.9em;
+}
+
+.seats-left {
+    color: red;
+    font-weight: bold;
+}
+
+/* Achievements section styles */
+.achievements {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    flex-direction: column;
+}
+
+.achievement {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.achievement .number {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Guarantee section styles */
+.guarantee {
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.guarantee p {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Join if section styles */
+.join-if h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.join-if ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+/* What you'll learn section styles */
+.what-youll-learn h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.learning-points {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    flex-direction: column;
+}
+
+.point {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    flex: 1; /* Equal width for each point */
+    margin: 0 10px; /* Add spacing between points */
+}
+
+.point h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+/* ... (Styles for other sections - how program helped, success stories, etc.) ... */
+
+/* Footer styles */
+.section_final {
+    text-align: center;
+    margin-top: 40px;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.section_final h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.section_final .offer {
+    font-size: 1.2em;
+    color: #c00;
+    margin-top: 20px;
+}
+
+/* ------------------------footer------------------------------------ */
+
+footer {
+    padding: 20px;
+    text-align: center;
+    color: #b2b7d6;
+    font-size: 11px;
+}
+
+.text-copyright {
+    text-decoration: none;
+    color: #070101;
+}
