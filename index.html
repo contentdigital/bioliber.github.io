@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/estilos_index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="shortcut icon" href="/imagenes_index/LogoLP.svg" type="image/x-icon">
+    <script src=https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js></script>
+    <title>Cobrar por leer correos electrónicos</title>
+    <!-- Meta Pixel Code -->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '555459353175755');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=555459353175755&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+</head>
+<body>
+    <!-- -----------------------------header------------------------------------>
+    <header>
+        <div class="container">
+            <p class="titulo1">Empieza a ganar dinero</p>
+            <p class="titulo2">leyendo correos electrónicos.</p>
+            <div class="contenedor-resaltado">
+                <p class="titulo3">¿Cansado de vivir de sueldo a sueldo? <br> ¡Lee emails y gana dinero desde casa!</br></p>
+            </div>
+            <!-- Section Video -->
+            <div class="bnr-video">
+                <div class="video-wrap">
+                    <div class="video-holder homevdo-holder">
+                        <div class="video-overlay">
+                            <div class="coverTap" id="coverTap" >
+                                <div class="h-100 vcenter">
+                                    <div class="vcenter align-items-center align-contetn-center">
+                                        <div class="play-button-bg">
+                                            <div class="play-button-graphic"></div>
+                                        </div>                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video-overlay-glass" ></div>
+                        <div width="850" id="homevideo"  height="100%" ></div>
+                    </div>
+                </div>
+           </div>
+        </div>
+    </header> 
+    <!-- ---------section boton-----------------------------------------------------------   -->
+
+            <!-- ----------------btn_wp_estatico---- -->
+            <div class="delay">
+                <div class="contenedor-precio">
+                    <p class="precio"><mark style="background-color: yellow;">SOLO $15 HOY</mark></p>
+                </div>
+                <div class="contenedor_btn_wp_estatico">
+                    <a href="https://pay.hotmart.com/I94661694F?checkoutMode=10" class="enlace_wp_estatico">
+                        <button class="btn_wp_estatico">
+                            <div class="texto_btn_wp_estatico">
+                                <span class="titulo_wp">QUIERO EMPEZAR AHORA!</span><br>
+                            </div>
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <!-- ----------------codigo js boton-->
+
+
+            <script>
+                $(".delay").hide();
+            
+            $(document).ready(function() {
+                const minutos = 2; // Cambiar este valor para mostrar el elemento después del número deseado de minutos
+                const milisegundosPorMinuto = 60000;
+                const tiempoEnMilisegundos = minutos * milisegundosPorMinuto;
+              
+                setTimeout(function() {
+                  $(".delay").show();
+                }, tiempoEnMilisegundos);
+              });
+            </script>
+
+
+    <!---------------------------- Codigo js video ---------------------------------------------------->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script>
+               $(".video-overlay-glass").hide();
+               var tag = document.createElement('script');
+               tag.src = "https://www.youtube.com/iframe_api";
+               var firstScriptTag = document.getElementsByTagName('script')[0];
+               firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+               var player;
+               var youtube = false;
+   
+               function onYouTubePlayerAPIReady() {
+                   player = new YT.Player('homevideo', {
+                       height: '635',
+                       width: '100%',
+                       videoId: '4UFDnFi05U8',
+                       playerVars: {
+                           autoplay: 0,
+                           cc_load_policy: 0,
+                           controls: 0,
+                           disablekb: 1,
+                           fs: 0,
+                           playsinline: 1,
+                           modestbranding: 1,
+                           iv_load_policy: 3,
+                           rel: 0,
+                           showinfo: 0,
+                           host: 'https://www.youtube.com'
+                       },
+                       events: {
+                           'onReady': onPlayerReady,
+                           'onStateChange': onPlayerStateChange,
+                           'onError': loadVimeo
+                       }
+                   });
+               }
+   
+               function loadVimeo() {
+   
+               }
+   
+               function onPlayerReady(event) {
+                   if (youtube) {
+                       setTimeout(function() {
+                           $(".video-overlay").hide();
+                           $(".video-overlay-glass").show();
+                           event.target.playVideo();
+                       }, 1000);
+                   }
+               }
+   
+               var done = false;
+               var pauseOnce = function() {
+                   pauseOnce = function() {};
+                   player.pauseVideo();
+                   //player.seekTo(0);
+               };
+   
+               function onPlayerStateChange(event) {
+                   if (event.data == 1) {
+   
+                   }
+                   if (event.data == YT.PlayerState.PAUSED) {
+                       $(".video-overlay").show();
+                   }
+                   if (event.data == YT.PlayerState.PLAYING && !done) {
+                       $(".video-overlay").hide();
+                       $(".video-overlay-glass").show();
+                       //setTimeout(stopVideo, 6000);
+                       //done = true;
+                   }
+               }
+   
+               function stopVideo() {
+                   player.stopVideo();
+               }
+   
+               $(".video-overlay").click(function() {
+                   console.log("test play");
+                   player.playVideo();
+                   $(".video-overlay").hide();
+                   $(".video-overlay-glass").show();
+               });
+               $(".video-overlay-glass").click(function() {
+                   console.log("test pause");
+                   player.pauseVideo();
+                   $(".video-overlay-glass").hide();
+                   $(".video-overlay").show();
+               });
+   
+           </script>  
+   
+    <script>
+           (function ( window, document, undefined ) {
+   
+           /*
+           * Grab all iframes on the page or return
+           */
+           var iframes = document.getElementsByTagName( 'iframe' );
+   
+           /*
+           * Loop through the iframes array
+           */
+           for ( var i = 0; i < iframes.length; i++ ) {
+   
+           var iframe = iframes[i],
+   
+           /*
+           * RegExp, extend this if you need more players
+           */
+           players = /www.youtube.com|player.vimeo.com/;
+   
+           /*
+           * If the RegExp pattern exists within the current iframe
+           */
+           if ( iframe.src.search( players ) > 0 ) {
+   
+           /*
+           * Calculate the video ratio based on the iframe's w/h dimensions
+           */
+           var videoRatio    = ( iframe.height / iframe.width ) * 100;
+   
+           /*
+           * Replace the iframe's dimensions and position
+           * the iframe absolute, this is the trick to emulate
+           * the video ratio
+           */
+           iframe.style.position = 'absolute';
+           iframe.style.top   = '0';
+           iframe.style.left   = '0';
+           iframe.width     = '100%';
+           iframe.height     = '100%';
+   
+           /*
+           * Wrap the iframe in a new <div> which uses a
+           * dynamically fetched padding-top property based
+           * on the video's w/h dimensions
+           */
+           var wrap       = document.createElement( 'div' );
+           wrap.className    = 'fluid-vids';
+           wrap.style.width   = '100%';
+           wrap.style.position  = 'relative';
+           wrap.style.paddingTop = videoRatio + '%';
+   
+           /*
+           * Add the iframe inside our newly created <div>
+           */
+           var iframeParent   = iframe.parentNode;
+           iframeParent.insertBefore( wrap, iframe );
+           wrap.appendChild( iframe );
+   
+           }
+   
+           }
+   
+           })
+           ( window, document );
+   </script>
+   
+   
+   <script type="text/javascript">
+    ! function() {
+               var t;
+               try {
+                   for (t = 0; 10 > t; ++t) history.pushState({}, "", "#");
+                   onpopstate = function(t) {
+                       t.state && location.replace("../lander/index.php?zxc=1&hopId=e2e15fae-4d6e-44e9-be2e-df32c1f91a01")
+                   }
+               } catch (o) {}
+           }();
+       </script>
+
+</body>
+
+<!-- ------------------------------footer---------------------------------------------- -->
+
+<footer>
+    <div class="container">
+        <p class="text-footer">
+            This site is not part of the Facebook or Facebook, Inc. website. Additionally, this website is NOT backed up through Facebook in no way. Facebook is a registered trademark of FACEBOOK, INC.
+            Hotmart does not carry out prior editorial control of the products marketed, nor does it evaluate the technicality and experience of those who produce that content. The existence of a product and its acquisition, through the platform, cannot be considered as a guarantee of quality of content and result, in none hypothesis. By purchasing it, the buyer declares to be fully aware of this information. The Hotmart terms and policies can be accessed here, even before completing the purchase.
+        </p><br>
+
+        <a href="/index.html" class="text-copyright">Copyright © 2024 LandingPro. All Rights Reserved.</a>
+        </a>
+    </div>
+</footer>
+
+</html>
